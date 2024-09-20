@@ -107,17 +107,17 @@ const beverageChoose = Number(
   )
 );
 const age = Number(prompt("나이 몇 살?"));
-const msg = `${movie.name[movieChoose]},${movie.seat[seatChoose]},${shop.prpcorn[popcornChoose]},${shop.beverage[beverageChoose]}`;
+const msg = `${movie.name[movieChoose]},${movie.seat[seatChoose].name},${shop.prpcorn[popcornChoose].name},${shop.beverage[beverageChoose].name}`;
 
 const total =
   movie.seat[seatChoose].price +
-  shop.popcorn[popcornChoose].price +
+  shop.prpcorn[popcornChoose].price +
   shop.beverage[beverageChoose].price;
 
 if (age <= 13) {
   const total =
     movie.seat[seatChoose].price * 0.7 +
-    shop.popcorn[popcornChoose].price +
+    shop.prpcorn[popcornChoose].price +
     shop.beverage[beverageChoose].price;
   console.log(`${msg} 총금액 : ${total}입니다`);
 } else if (age >= 60) {
