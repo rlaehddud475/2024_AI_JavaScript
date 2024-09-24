@@ -17,16 +17,16 @@ console.log(num1);
 console.log(num2);
 console.log(num3);
 
-const fruitArray = [
-  "watermelon",
-  "cherrt",
-  "banana",
-  "avocado",
-  "apple",
-  "orange",
-  "pineapple",
-  "strawberry",
-];
+  const fruitArray = [
+    "watermelon",
+    "cherrt",
+    "banana",
+    "avocado",
+    "apple",
+    "orange",
+    "pineapple",
+    "strawberry",
+  ];
 
 const le = (x) => {
   return x.length >= 7 ? x.toUpperCase() : x.toLowerCase();
