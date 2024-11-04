@@ -1,36 +1,63 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 20px;
-}
-
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #ccc;
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
+  justify-content: flex-end; /* 오른쪽 정렬 */
+  padding: 10px 20px; /* 상하, 좌우 패딩 */
+  z-index: 1000;
+  border-bottom: solid 5px yellow;
 }
 
-.profile,
-.win-rate,
-.pokemon-list {
-  border: 1px solid #ccc;
-  padding: 20px;
-  border-radius: 5px;
-  max-width: 400px;
-  margin-bottom: 20px;
+.header-buttons {
+  display: flex;
+  gap: 15px; /* 버튼 간 간격 */
 }
 
-h2 {
-  text-align: center;
-}
-
-.header-button,
-.button {
-  padding: 10px;
-  background-color: #007bff;
-  color: white;
+.header-button {
   text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  margin-right: 50px;
+}
+
+main {
+  padding: 20px;
+  /* 메인 콘텐츠에 여백 추가 */
+}
+
+.page {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-bottom: 50px;
+  border-bottom: solid 5px yellow;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 200px;
+}
+.out {
+  width: 100px;
+  height: 30px;
+  background-color: yellow;
+  border: 1px solid yellow;
   border-radius: 5px;
-  display: block;
-  text-align: center;
-  margin: 10px 0;
+}
+span {
+  margin-right: 300px;
 }
